@@ -19,11 +19,9 @@ stages:
 
     displayName: 'build'
 
- stage:    
+ stage:
   steps:
-
   - script: |
-
   
      echo "testing deployment"    
     displayName: 'deployment'
