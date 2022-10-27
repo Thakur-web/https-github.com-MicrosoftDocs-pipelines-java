@@ -1,4 +1,4 @@
-trigger: None
+trigger: none
 #- master
 
 pool: Hosted Windows 2019 with VS2019 
