@@ -7,19 +7,15 @@ pool: Hosted Windows 2019 with VS2019
 # - group: glance-prod
 
 stages:
- build
-        
+ stage1:dev
   steps:
   - script: |
 
 
           echo "testing build"
-
-         # docker build -t  glance:$(Build.Buildnumber) .
-
     displayName: 'build'
 
- deploy
+ stage2:QA
   steps:
   - script: |
   
