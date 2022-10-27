@@ -1,0 +1,31 @@
+trigger: None
+#- master
+
+pool: 
+
+# variables:
+# - group: glance-prod
+
+stages:
+ stage: backend      
+        
+  steps:
+  - script: |
+
+
+          echo "testing build"
+
+         # docker build -t  glance:$(Build.Buildnumber) .
+
+    displayName: 'build'
+
+ stage: frontend      
+  steps:
+
+  - script: |
+
+  
+     echo "testing deployment"    
+    displayName: 'deployment'
+   
+ 
