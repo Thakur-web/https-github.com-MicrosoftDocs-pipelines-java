@@ -7,7 +7,7 @@ pool: Hosted Windows 2019 with VS2019
 # - group: glance-prod
 
 stages:
- stage1:dev
+ stage:dev
   steps:
   - script: |
 
@@ -15,7 +15,7 @@ stages:
           echo "testing build"
     displayName: 'build'
 
- stage2:QA
+ stage:QA
   steps:
   - script: |
   
