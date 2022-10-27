@@ -1,7 +1,7 @@
 trigger: None
 #- master
 
-pool: 
+pool: Hosted Windows 2019 with VS2019 
 
 # variables:
 # - group: glance-prod
@@ -9,7 +9,7 @@ pool:
 stages:
  stage: backend      
         
-  steps:
+  steps: dev
   - script: |
 
 
@@ -19,7 +19,7 @@ stages:
 
     displayName: 'build'
 
- stage: frontend      
+ stage: QA      
   steps:
 
   - script: |
