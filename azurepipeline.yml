@@ -7,7 +7,7 @@ pool: Hosted Windows 2019 with VS2019
 # - group: glance-prod
 
 stages:
- build:
+ build
         
   steps:
   - script: |
@@ -19,7 +19,7 @@ stages:
 
     displayName: 'build'
 
- deploy:
+ deploy
   steps:
   - script: |
   
